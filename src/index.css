@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --body_background: white;
+    --body_color: black;
+}
+
+[data-theme="dark"] {
+    --body_background: #282c34;
+    --body_color: white;
+}
+
+* {
+    transition: all 0.1s ease-in-out;
+}
+
+.overlay {
+    @apply fixed inset-0 bg-black opacity-50 z-50 pointer-events-none;
+  }
+  
+  .popup-open {
+    @apply overflow-hidden;
+  }
+  
+
